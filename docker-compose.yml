@@ -1,7 +1,6 @@
 services:
   vote:
-    build: 
-      context: ./vote
+    image: kaivalyabachkar/votingapp_vote
       target: dev
     depends_on:
       redis:
@@ -21,8 +20,7 @@ services:
       - back-tier
 
   result:
-    build: ./result
-    # use nodemon rather than node for local dev
+    image: kaivalyabachkar/votingapp_result
     entrypoint: nodemon --inspect=0.0.0.0 server.js
     depends_on:
       db:
@@ -37,8 +35,7 @@ services:
       - back-tier
 
   worker:
-    build:
-      context: ./worker
+    image: kaivalyabachkar/votingapp_worker
     depends_on:
       redis:
         condition: service_healthy 
