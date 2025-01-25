@@ -83,7 +83,7 @@ kubectl cluster-info
 
 - Apply Kubernetes YAML specifications for the voting app:
   ```bash
-  kubectl apply -f k8s-specifications/
+  kubectl apply -f Kubernetes/
   ```
 
 - List all Kubernetes resources:
