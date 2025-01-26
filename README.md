@@ -1,7 +1,5 @@
 # Multi Tier Voting app-on k8s kind
 
-A comprehensive guide for setting up a Kubernetes cluster using Kind on an AWS EC2 instance, installing and configuring Argo CD, and deploying applications using Argo CD.
-
 ## Overview
 
 This guide covers the steps to:
@@ -26,6 +24,10 @@ This guide covers the steps to:
 ## Architecture
 
 ![Architecture diagram](Images/architecture.png)
+
+## ArgoCD Configuration
+
+![Configuration diagram](Images/configuration.png)
 
 ## Observability
 
